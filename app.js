@@ -1,15 +1,13 @@
-const prompts = [
-  {
-    title: "Test",
-    category: "Demo",
-    prompt: "Exemple de prompt"
-  }
-];
+const promptList = document.getElementById("promptList");
 
-const container = document.getElementById("prompts");
-
-prompts.forEach(p => {
-  const div = document.createElement("div");
-  div.innerHTML = <><h3>${p.title}</h3><p>${p.prompt}</p></>;
-  container.appendChild(div);
-});
+fetch("prompts.json")
+  .then(res => res.json())
+  .then(data => {
+    data.forEach(p => {
+      const div = document.createElement("div");
+      div.innerHTML = 
+        <><h3>${p.title}</h3><p><strong>${p["catégorie"]}</strong></p><p>${p.prompt}</p></>
+      ;
+      promptList.appendChild(div);
+    });
+  });
