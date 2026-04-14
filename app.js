@@ -2,14 +2,21 @@ const promptList = document.getElementById("promptList");
 const form = document.getElementById("form");
 
 fetch("prompts.json")
-  .then(res => res.json())
+  .then(response => response.json())
   .then(data => {
     data.forEach(addPrompt);
   });
 
 function addPrompt(p) {
   const div = document.createElement("div");
-  div.innerHTML = <><h3>${p.title}</h3><p>${p.prompt}</p></>;
+  div.classList.add("prompt");
+
+  div.innerHTML = `
+    <h3>${p.title}</h3>
+    <p><strong>${p.category || p["catégorie"]}</strong></p>
+    <p>${p.prompt}</p>
+  `;
+
   promptList.appendChild(div);
 }
 
@@ -24,4 +31,4 @@ form.addEventListener("submit", function(e) {
 
   addPrompt(newPrompt);
   form.reset();
-}); 
+});
