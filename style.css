@@ -1,11 +1,38 @@
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   margin: 20px;
-  background: #f4f4f4;
+  background-color: #f4f4f4;
 }
 
-div {
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input, textarea, button {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.prompt {
   background: white;
   padding: 10px;
   margin-bottom: 10px;
-}
+  border-radius: 5px;
+} 
