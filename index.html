@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>AI Prompt Library</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Prompt Library</h1>
-  <div id="Ai prompt Library"></div>
+
+  <h1>📚 AI Prompt Library</h1>
+
+  <form id="form">
+    <input type="text" id="title" placeholder="Title" required>
+    <input type="text" id="category" placeholder="Category" required>
+    <textarea id="prompt" placeholder="Prompt" required></textarea>
+    <button type="submit">Add Prompt</button>
+  </form>
+
+  <div id="promptList"></div>
 
   <script src="app.js"></script>
-  <form id="form">
-  <input type="text" id="title" placeholder="Title" required>
-  <input type="text" id="category" placeholder="Category" required>
-  <textarea id="prompt" placeholder="Prompt"></textarea>
-  <button type="submit">Add</button>
-</form>
 </body>
 </html>
