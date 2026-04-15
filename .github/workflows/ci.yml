@@ -2,16 +2,13 @@ name: CI pipeline
 
 on:
   push:
-    branches: [ "main, develop" ]
+    branches: [main, develop]
   pull_request:
-    branches: [ "main, develop" ]
+    branches: [main, develop]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
