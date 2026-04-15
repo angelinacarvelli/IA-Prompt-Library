@@ -12,6 +12,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker compose up -d
+      run: docker compose up -d 
     - name: ckeck docker image 
-      run: docker ps 
+      run: docker ps
+    - name: check action
+      run: |
+        echo "validate"
+        echo "it's work"
+        echo "congratulation"
