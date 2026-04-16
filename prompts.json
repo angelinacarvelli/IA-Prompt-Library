@@ -1,12 +1,27 @@
 [
   {
-    "title": "Donner une recette",
+    "title": "Donner une recette 🍽️",
     "catégorie": "Recette",
     "prompt": "Donne moi une idée de recette détaillée."
   },
   {
-    "title": "Calcule mentale",
+    "title": "Calcul mental 🧮",
     "category": "calcul",
-    "prompt": "fait moi un calcul aléatoire"
+    "prompt": "fait moi un calcul aléatoire."
+  },
+  {
+    "title": "faire backflip 🤸",
+    "category": "backflio",
+    "prompt": "explique moi comment faire un backflip."
+  },
+  {
+    "title": "Pourcentage relationnelle ❤️",
+    "category": "calcul",
+    "prompt": "fait moi un calcul de pourcentage de ma relation avec ..."
+  },
+  {
+    "title": "devine le jeu 🎱",
+    "category": "Qui est-ce ?",
+    "prompt": "pose des questions pour devinez a qui je pense."
   }
 ]
