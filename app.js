@@ -1,7 +1,7 @@
 const promptList = document.getElementById("promptList");
 const form = document.getElementById("form");
 
-fetch("prompts.json")
+fetch("prompts.Json")
   .then(response => response.json())
   .then(data => {
     data.forEach(addPrompt);
