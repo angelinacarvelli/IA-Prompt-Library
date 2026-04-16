@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Donner une recette",
+    "catégorie": "Recette",
+    "prompt": "Donne moi une idée de recette détaillée."
+  },
+  {
+    "title": "Calcule mentale",
+    "category": "calcul",
+    "prompt": "fait moi un calcul aléatoire"
+  }
+]
