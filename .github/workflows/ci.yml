@@ -2,17 +2,23 @@ name: CI pipeline
 
 on:
   push:
-    branches: [ "main, develop" ]
+    branches: [main, develop]
   pull_request:
-    branches: [ "main, develop" ]
+    branches: [main, develop]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker compose up -d
+      run: 
+        echo "✅ docker build"
+        docker compose up -d 
+    - name: ckeck docker image 
+      run: docker ps
+    - name: check action
+      run: |
+        echo "validate"
+        echo "it's work"
+        echo "congratulation"
