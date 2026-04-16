@@ -15,7 +15,7 @@ jobs:
       run: 
         echo "✅ docker build"
         docker compose up -d 
-    - name: ckeck docker image 
+    - name: check docker image 
       run: docker ps
     - name: check action
       run: |
